@@ -4,9 +4,17 @@
 
 =# Cannot mix content beside the haml tag with content nested under it – one or the other
 
-%h1 Bender Bending Rodríguez
+
+
+=# After '=' sign is Ruby code
+%h1= "#{@name.titleize}"
 
 %img{:src => "https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Bender_Rodriguez.png/220px-Bender_Rodriguez.png"}
+
+=# This is how you can make a loop in HAML
+%p
+  - (0..3).each do |i|
+    This is a block in HAML. 
 
 / .btn.btn-primary.btn-large My Button
 / %div.btn.btn-primary.btn-large My Button 2
