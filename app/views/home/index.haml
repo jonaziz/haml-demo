@@ -6,9 +6,19 @@
 
 %h1 Bender Bending Rodríguez
 
+%img{:src => "https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Bender_Rodriguez.png/220px-Bender_Rodriguez.png"}
+
+/ .btn.btn-primary.btn-large My Button
+/ %div.btn.btn-primary.btn-large My Button 2
+
 =# Ruby hash style for attributes like style (not preferred over CSS stylesheet)
 =# Can also do Ruby stuff inside the hash
-%section{:style => "color: #{"RED".downcase};"}
+=# %section{:style => "color: #{"RED".downcase};"}
+=# Anything after hash will be treated as content
+
+
+=# This is adding a class to the section
+%section#sample.experience.awesome
   %h2 Experience
   %p
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

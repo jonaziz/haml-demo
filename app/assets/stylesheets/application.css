@@ -12,6 +12,14 @@
  *= require_tree .
  */
 
-.experience {
+#sample {
 	font-size: 13px;
+}
+
+.experience {
+	color: red;
+}
+
+.awesome {
+	line-height: 20px;
 }
